@@ -44,11 +44,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* abaixo de 768 vai aplicar isso */
-  .filter-container.base-card {
-    flex-direction: column;
-    height: 150px;
-  }
 
   .filter-container .filter-input {
     margin-top: 20px;

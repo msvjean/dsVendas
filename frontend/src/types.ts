@@ -28,13 +28,18 @@ export type SalesByStore = {
   sum: number;
 };
 
+export type SalesByGender = {
+  gender: Gender;
+  sum: number;
+};
+
 export type SalesByPaymentMethod = {
   description: string;
   sum: number;
 };
 
 export type PieChartConfig = {
-  labels: string[];
+  labels: Gender[];
   series: number[];
 };
 

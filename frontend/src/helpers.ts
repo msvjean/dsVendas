@@ -1,7 +1,7 @@
-import { SalesByPaymentMethod, SalesByStore } from './types';
+import { SalesByGender, SalesByPaymentMethod } from './types';
 
-export const buildSalesByStoreChart = (sales: SalesByStore[]) => {
-  const labels = sales.map((sale) => sale.storeName);
+export const buildSalesByGenderChart = (sales: SalesByGender[]) => {
+  const labels = sales.map((sale) => sale.gender);
   const series = sales.map((sale) => sale.sum);
 
   return {

@@ -2,7 +2,6 @@ import './styles.css';
 import 'flatpickr/dist/themes/material_green.css';
 import flatpickrLib from 'flatpickr';
 import { Portuguese } from 'flatpickr/dist/l10n/pt';
-import FlatPicker from 'react-flatpickr';
 import React, { useState } from 'react';
 import { FilterData, Gender } from '../../types';
 import Select from 'react-select';
@@ -39,7 +38,9 @@ function Filter({ onFilterChange }: Props) {
 
   return (
     <div className="filter-container base-card">
-      <Select options={options} />
+      <div className="select-gender-option">
+        <Select options={options} />
+      </div>
     </div>
   );
 }
